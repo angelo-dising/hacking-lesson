@@ -19,7 +19,7 @@ def scan(addr, port):
 ports=[21, 22, 25, 80]
  
 # bucle por todas las ip del rango 192.168.0.*
-for i in range(1,255):
+for i in range(1,50):
     addr="192.168.0.{}".format(i)
     for port in ports:
         result=scan(addr, port)
